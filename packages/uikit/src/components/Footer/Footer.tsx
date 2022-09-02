@@ -33,7 +33,7 @@ const MenuItem: React.FC<FooterProps> = ({
   return (
     <StyledFooter p={["40px 16px", null, "56px 40px 32px 40px"]} {...props} justifyContent="center">
       <Flex flexDirection="column" width={["100%", null, "1200px;"]}>
-        <StyledIconMobileContainer display={["block", null, "none"]}>
+        {/* <StyledIconMobileContainer display={["block", null, "none"]}>
           <LogoWithTextIcon isDark width="130px" />
         </StyledIconMobileContainer>
         <Flex
@@ -69,7 +69,7 @@ const MenuItem: React.FC<FooterProps> = ({
             <LogoWithTextIcon isDark width="160px" />
           </Box>
         </Flex>
-        <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
+        <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} /> */}
         <StyledToolsContainer
           order={[1, null, 3]}
           flexDirection={["column", null, "row"]}
@@ -86,9 +86,9 @@ const MenuItem: React.FC<FooterProps> = ({
             />
           </Flex>
           <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
-            <Box mr="20px">
+            {/* <Box mr="20px">
               <CakePrice cakePriceUsd={cakePriceUsd} color={darkColors.textSubtle as keyof Colors} />
-            </Box>
+            </Box> */}
             <Button
               as="a"
               href="https://pancakeswap.finance/swap?outputCurrency=0x75Fb018d4AA1A9D1E73700bc9440ce20F22E7e93"

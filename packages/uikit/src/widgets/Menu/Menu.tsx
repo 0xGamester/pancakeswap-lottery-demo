@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 
 const StyledNav = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   width: 100%;
   height: ${MENU_HEIGHT}px;
@@ -131,16 +131,16 @@ const Menu: React.FC<NavProps> = ({
         <FixedContainer showMenu={showMenu} height={totalTopMenuHeight}>
           {banner && <TopBannerContainer height={topBannerHeight}>{banner}</TopBannerContainer>}
           <StyledNav>
-            <Flex>
+            {/* <Flex>
               <Logo isDark={isDark} href={homeLink?.href ?? "/"} />
               {!isMobile && <MenuItems items={links} activeItem={activeItem} activeSubItem={activeSubItem} ml="24px" />}
-            </Flex>
+            </Flex> */}
             <Flex alignItems="center" height="100%">
-              {!isMobile && !isMd && (
+              {/* {!isMobile && !isMd && (
                 <Box mr="12px">
                   <CakePrice showSkeleton={false} cakePriceUsd={cakePriceUsd} />
                 </Box>
-              )}
+              )} */}
               <Box mt="4px">
                 <LangSelector
                   currentLang={currentLang}

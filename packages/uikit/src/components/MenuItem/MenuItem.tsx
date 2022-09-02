@@ -22,9 +22,9 @@ const MenuItem: React.FC<MenuItemProps> = ({
       };
   return (
     <StyledMenuItemContainer $isActive={isActive} $variant={variant}>
-      <StyledMenuItem {...itemLinkProps} $isActive={isActive} $variant={variant} $statusColor={statusColor} {...props}>
+      {/* <StyledMenuItem {...itemLinkProps} $isActive={isActive} $variant={variant} $statusColor={statusColor} {...props}>
         {children}
-      </StyledMenuItem>
+      </StyledMenuItem> */}
     </StyledMenuItemContainer>
   );
 };
